@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security report
+    url: https://github.com/RPCDesk/rpcdesk/security/advisories/new
+    about: Report a vulnerability privately. Never open a public issue for one.
+  - name: App source
+    url: https://github.com/RPCDesk/rpcdesk
+    about: Code, releases, and build instructions.
+  - name: Website
+    url: https://rpcdesk.ayushb.com
+    about: Screenshots and download links.

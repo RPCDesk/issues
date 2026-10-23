@@ -1,0 +1,20 @@
+name: Question
+description: Ask how to do something with rpcdesk.
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: rpcdesk version and platform
+      placeholder: 0.1.1 on macOS arm64
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you already tried
+      description: Docs you read, settings you changed, error text you saw.

@@ -1,0 +1,45 @@
+name: Feature request
+description: Suggest a capability rpcdesk does not have yet.
+labels: ["enhancement", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        rpcdesk is a shell around `omp` and `pi`: it owns presentation and process lifetime,
+        while models, credentials, tools, and policy stay with the CLI. Requests that add a
+        provider SDK, model call, or tool execution to the app are out of scope by design
+        (see ADR 0002 in the app repo).
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you hitting?
+      description: Describe the workflow that feels wrong today, not the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered
+      description: Including "do it in a plugin" — plugins can render tools, add panels and commands, and ship themes.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Sessions and tabs
+        - Transcript rendering
+        - Approvals
+        - Plugins
+        - Themes and appearance
+        - Updates and packaging
+        - Runtime discovery and downloads
+        - Settings
+        - Other
+    validations:
+      required: true
